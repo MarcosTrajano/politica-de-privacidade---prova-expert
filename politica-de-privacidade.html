@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade – Prova Expert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a2e;
+      --paper: #f7f4ef;
+      --accent: #2d6a4f;
+      --accent-light: #d8f3dc;
+      --muted: #6b7280;
+      --border: #e5e0d8;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.02) 40px,
+        rgba(255,255,255,0.02) 41px
+      );
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.2rem;
+    }
+    header h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      position: relative;
+    }
+    header h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: #a8d5b5;
+    }
+    .meta {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #9ca3af;
+      position: relative;
+    }
+
+    /* LAYOUT */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* INTRO BOX */
+    .intro-box {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+      font-size: 0.95rem;
+      color: #1b4332;
+    }
+    .intro-box strong { font-weight: 500; }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 2.75rem;
+      animation: fadeUp 0.5s ease both;
+    }
+    section:nth-child(1) { animation-delay: 0.05s; }
+    section:nth-child(2) { animation-delay: 0.1s; }
+    section:nth-child(3) { animation-delay: 0.15s; }
+    section:nth-child(4) { animation-delay: 0.2s; }
+    section:nth-child(5) { animation-delay: 0.25s; }
+    section:nth-child(6) { animation-delay: 0.3s; }
+    section:nth-child(7) { animation-delay: 0.35s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    h2 .icon {
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      color: #fff;
+    }
+
+    p { margin-bottom: 0.75rem; color: #374151; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0;
+    }
+    ul li {
+      position: relative;
+      padding-left: 1.4rem;
+      margin-bottom: 0.4rem;
+      color: #374151;
+      font-size: 0.95rem;
+    }
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.8rem;
+      top: 3px;
+    }
+
+    /* DIVIDER */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* CONTACT CARD */
+    .contact-card {
+      background: var(--ink);
+      color: var(--paper);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    .contact-card h2 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+    .contact-card h2 .icon { background: var(--accent); }
+    .contact-card p { color: #d1d5db; margin-bottom: 0.4rem; }
+    .contact-card a { color: #6ee7b7; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding: 2rem 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 2rem 1rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Transparência &amp; Privacidade</div>
+  <h1>Política de <em>Privacidade</em><br>Prova Expert</h1>
+  <p class="meta">Última atualização: 20 de maio de 2025</p>
+</header>
+
+<div class="container">
+
+  <div class="intro-box">
+    <strong>Resumo simples:</strong> o Prova Expert coleta apenas seu nome e e-mail via login social do Google, exclusivamente para criar e identificar sua conta. Não vendemos nem compartilhamos seus dados com terceiros para fins comerciais.
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> 1. Quem somos</h2>
+    <p>O <strong>Prova Expert</strong> é um aplicativo mobile desenvolvido para auxiliar estudantes na preparação para provas e concursos. Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📥</span> 2. Dados que coletamos</h2>
+    <p>Ao fazer login com sua Conta Google, coletamos automaticamente:</p>
+    <ul>
+      <li><strong>Nome:</strong> para identificação e personalização da sua conta</li>
+      <li><strong>Endereço de e-mail:</strong> para autenticação e comunicações essenciais</li>
+    </ul>
+    <p style="margin-top:0.75rem;">Não coletamos senhas, dados bancários, localização, contatos, fotos ou qualquer outra informação além das listadas acima.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🎯</span> 3. Como usamos seus dados</h2>
+    <p>Suas informações são utilizadas exclusivamente para:</p>
+    <ul>
+      <li>Criar e gerenciar sua conta no aplicativo</li>
+      <li>Identificar você de forma segura a cada acesso</li>
+      <li>Enviar comunicações essenciais relacionadas ao serviço (ex.: alterações nesta política)</li>
+      <li>Manter a segurança e integridade da plataforma</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔗</span> 4. Login social com Google</h2>
+    <p>O processo de autenticação é realizado diretamente pelo <strong>Google Sign-In</strong>, seguindo os padrões OAuth 2.0. O Prova Expert recebe apenas os dados que você autoriza durante o login. O processo de autenticação do Google está sujeito à <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);">Política de Privacidade do Google</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🚫</span> 5. Compartilhamento de dados</h2>
+    <p>Seus dados <strong>não são vendidos, alugados ou compartilhados</strong> com terceiros para fins comerciais ou publicitários.</p>
+    <p>Podemos compartilhar informações somente nos seguintes casos excepcionais:</p>
+    <ul>
+      <li>Quando exigido por lei ou ordem judicial</li>
+      <li>Para proteger os direitos, propriedade ou segurança dos usuários</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> 6. Segurança</h2>
+    <p>Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição. A autenticação é realizada via protocolo seguro (OAuth 2.0 / HTTPS).</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">⏱️</span> 7. Retenção de dados</h2>
+    <p>Seus dados são mantidos enquanto sua conta estiver ativa. Ao solicitar a exclusão da conta, removeremos seus dados pessoais em até <strong>30 dias</strong>, salvo obrigação legal de retenção.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✅</span> 8. Seus direitos</h2>
+    <p>De acordo com a <strong>Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018)</strong>, você tem direito a:</p>
+    <ul>
+      <li>Confirmar a existência de tratamento dos seus dados</li>
+      <li>Acessar os dados que temos sobre você</li>
+      <li>Solicitar a correção de dados incompletos ou incorretos</li>
+      <li>Solicitar a exclusão dos seus dados pessoais</li>
+      <li>Revogar o consentimento a qualquer momento</li>
+    </ul>
+    <p style="margin-top:0.75rem;">Para exercer qualquer um desses direitos, entre em contato pelo e-mail indicado abaixo.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">👶</span> 9. Crianças e adolescentes</h2>
+    <p>O Prova Expert não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente dados de menores sem o consentimento dos responsáveis legais.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📝</span> 10. Alterações nesta política</h2>
+    <p>Esta política pode ser atualizada periodicamente. Quando houver mudanças relevantes, notificaremos os usuários pelo e-mail cadastrado ou por aviso no aplicativo. O uso continuado do Prova Expert após as alterações implica na aceitação da política atualizada.</p>
+  </section>
+
+  <hr />
+
+  <div class="contact-card">
+    <h2><span class="icon">✉️</span> Fale conosco</h2>
+    <p>Dúvidas, solicitações ou reclamações sobre privacidade? Entre em contato:</p>
+    <p><strong>App:</strong> Prova Expert</p>
+    <p><strong>E-mail:</strong> <a href="mailto:privacidade@provaexpert.app">privacidade@provaexpert.app</a></p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Prova Expert · Todos os direitos reservados · LGPD compliant
+</footer>
+
+</body>
+</html>
